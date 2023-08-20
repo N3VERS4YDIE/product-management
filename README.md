@@ -85,17 +85,17 @@ If you prefer to use MySQL/MariaDB directly from your terminal follow these step
 2. Create a new database:
 
    ```bash
-   mysql CREATE DATABASE product_management;
+   mysql -u username -p -e "CREATE DATABASE product_management;"
    ```
+
+   > [!NOTE]
+   > If you don't have a username and password, use `root` as the username and don't use the `-p` argument, or just press ENTER when prompted to enter the password.
 
 3. Navigate to the `db` directory and import the file `product_management.sql`:
 
    ```bash
    mysql -u username -p product_management < product_management.sql
    ```
-
-   > [!NOTE]
-   > If you don't have a username and password, use `root` as the username and don't use the `-p` argument, or just press ENTER when prompted to enter the password.
 
 ## Usage
 
