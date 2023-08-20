@@ -97,6 +97,19 @@ If you prefer to use MySQL/MariaDB directly from your terminal follow these step
    mysql -u username -p product_management < product_management.sql
    ```
 
+   > [!NOTE]
+   > If you are using PowerShell, the `<` operator for input redirection has a different behavior. Instead use:
+   >
+   > ```powershell
+   > Get-Content product_management.sql | mysql -u username -p product_management
+   > ```
+   >
+   > or
+   >
+   > ```powershell
+   > cmd.exe /c "mysql -u username -p product_management < product_management.sql"
+   > ```
+
 ## Usage
 
 1. Make sure your MySQL server is running.
